@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gentium Plus, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --header-color: #9e9e9e;
+    --font-color1: #000000;
+    --font-color2: #fff;
+    --bg-color1: #2badad;
+    --bg-color2: #808080;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--header-color);
+}
+
+.logo-text img,
+.logo-img img {
+    width: 3rem;
+}
+
+.text-list ul {
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.text-list ul li a {
+    padding: 1rem;
+    color: var(--font-color1);
+}
+
+.text-list li:hover {
+    transform: scale(1.2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    width: 2rem;
+    display: none;
+}
+
+/*-------------------------------------------------------*/
+#img-nav {
+    width: 100vw;
+}
+
+/*-------------------------------------------------------*/
+#sub-text {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/*-------------------------------------------------------*/
+.top-img-container {
+    background-color: var(--bg-color1);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#top-images img {
+    width: 17rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+}
+
+#top-images img:hover {
+    transform: scale(.9);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+.limited-container {
+    background-color: var(--bg-color2);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+#limited-images img {
+    width: 45vw;
+    padding: 0px 1rem;
+}
+
+#limited-images img:hover {
+    transform: scale(.9);
+    transition: .6s;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+#app-container {
+    background-color: var(--bg-color1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+#app-img img {
+    width: 41vw;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.app-content {
+    width: 40vw;
+    text-align: center;
+}
+
+.app-content p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    padding-bottom: 6rem;
+}
+
+#app-title {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+#store-button img {
+    width: 2rem;
+}
+
+#store-button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .3rem;
+    border: 1px solid var(--font-color1);
+}
+
+#store-button:hover {
+    transform: scale(.9);
+    transition: .3s;
+}
+
+/*-------------------------------------------------------*/
+#footer-content {
+    background-color: var(--bg-color2);
+    padding: 2rem;
+    text-align: center;
+    color: var(--font-color2);
+}
+
+#footer-content img {
+    text-align: center;
+    width: 4rem;
+}
+
+#footer-content p {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------------------------*/
+@media (max-width: 780px) {
+    header {
+        display: flex;
+    }
+
+    .text-list,
+    .logo-img {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #sub-text {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    #app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-content {
+        width: 80vw;
+    }
+
+    #app-title {
+        padding: .6rem;
+    }
+
+    #top-images img {
+        width: 11rem;
+    }
+
+    #limited-images img {
+        width: 23rem;
+        margin: auto;
+    }
+}
